@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.Stack;
 
 public class InfixToPostfixPrefix {
@@ -18,8 +19,9 @@ public class InfixToPostfixPrefix {
    }
 
    public void inputExpression() {
-      System.out.print("Enter the infix expression: ");
-      infix = new java.util.Scanner(System.in).nextLine().toCharArray();
+      Scanner scanner = new Scanner(System.in);
+      System.out.print("Enter infix expression: ");
+      infix = scanner.nextLine().toCharArray();
    }
 
    public void inToPost() {
